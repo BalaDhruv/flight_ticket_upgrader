@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "43d242f2-0a0a-4195-bc6a-5334be5d1eb4",
+		"name": "flight_ticket_upgrader",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "upgrade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/Bala/Downloads/ftu.csv"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/upgrade",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"upgrade"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
